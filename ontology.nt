@@ -1,0 +1,335 @@
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for representing high-risk medical devices, incidents and corrective actions under MDR/IVDR regulations" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device that requires a source of energy to operate" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ActiveDevice" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk associated with biological contamination or reaction" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk> <http://www.w3.org/2000/01/rdf-schema#label> "BiologicalRisk" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to chemical substances or exposure" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk> <http://www.w3.org/2000/01/rdf-schema#label> "ChemicalRisk" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "Low risk medical device classification" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "ClassI" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "High risk medical device classification" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIII" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-low risk medical device classification" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIa" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high risk medical device classification" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIb" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action taken to address or mitigate a reported incident" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "CorrectiveAction" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device registered in the system" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/resource/Medical_device" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer located within the European Union" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "EuropeanManufacturer" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "Action taken to correct a device already in use" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "FieldCorrection" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident that requires urgent attention due to its severity" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> <http://www.w3.org/2000/01/rdf-schema#label> "HighPriorityIncident" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device classified as high risk according to its risk class" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> <http://www.w3.org/2000/01/rdf-schema#label> "HighRiskDevice" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Event associated with a medical device that may cause risk or harm" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization responsible for producing a medical device" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/resource/Manufacturer" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to mechanical failure or malfunction" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk> <http://www.w3.org/2000/01/rdf-schema#label> "MechanicalRisk" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident with limited or no significant impact on patient health" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident> <http://www.w3.org/2000/01/rdf-schema#label> "MinorIncident" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer located outside the European Union" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "NonEuropeanManufacturer" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device that is not intended to be implanted in the body" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "NonImplantableDevice" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Action to remove a defective device from the market" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident that must be reported to regulatory authorities" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident> <http://www.w3.org/2000/01/rdf-schema#label> "ReportableIncident" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Potential hazard associated with the use of a medical device" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/resource/Risk" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification category that defines the risk level of a medical device" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "RiskClass" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification issued to warn about a potential risk" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyAlert" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident that is under monitoring after corrective actions have been applied" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyMonitoredIncident" .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident that leads to serious consequences such as death or serious deterioration of health" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "SeriousIncident" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveImplant
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1> .
+# 
+# http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1> .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical device intended to be placed inside the human body" .
+<http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableDevice" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid10 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1> .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid7 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
