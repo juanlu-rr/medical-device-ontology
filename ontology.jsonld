@@ -1,0 +1,577 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    }, {
+      "@id" : "_:genid12"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid16"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid7"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology for representing high-risk medical devices, incidents and corrective actions under MDR/IVDR regulations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Device Ontology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device that requires a source of energy to operate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#BiologicalRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk associated with biological contamination or reaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BiologicalRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ChemicalRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to chemical substances or exposure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ChemicalRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low risk medical device classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClassI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High risk medical device classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium-low risk medical device classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClassIIa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIIb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium-high risk medical device classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClassIIb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Action taken to address or mitigate a reported incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device registered in the system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://dbpedia.org/resource/Medical_device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#EuropeanManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manufacturer located within the European Union"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EuropeanManufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#FieldCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Action taken to correct a device already in use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FieldCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighPriorityIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident that requires urgent attention due to its severity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighPriorityIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#HighRiskDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device classified as high risk according to its risk class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighRiskDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device intended to be placed inside the human body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event associated with a medical device that may cause risk or harm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Organization responsible for producing a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://dbpedia.org/resource/Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MechanicalRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to mechanical failure or malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MechanicalRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#MinorIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident with limited or no significant impact on patient health"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MinorIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonEuropeanManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manufacturer located outside the European Union"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NonEuropeanManufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#NonImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device that is not intended to be implanted in the body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NonImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Action to remove a defective device from the market"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ReportableIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident that must be reported to regulatory authorities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReportableIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Potential hazard associated with the use of a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://dbpedia.org/resource/Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classification category that defines the risk level of a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Notification issued to warn about a potential risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SafetyMonitoredIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident that is under monitoring after corrective actions have been applied"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SafetyMonitoredIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident that leads to serious consequences such as death or serious deterioration of health"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#ClassIII"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#classIII_1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#incident_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#affectsDevice" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#device_1"
+  } ],
+  "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#action_1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/juanl/ontologies/2026/3/untitled-ontology-2#Incident"
+  } ]
+}, {
+  "@id" : "urn:swrl:var#a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#d",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#i",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
